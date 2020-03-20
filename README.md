@@ -2,7 +2,7 @@
 
 > My impeccable Nuxt.js project
 
-![Alt text](https://drive.google.com/file/d/1211_LAYVsfs0RVtiLOXPfoog3tW0wy6_/view?usp=sharing "Basic Page")
+![image](https://cloud.githubusercontent.com/assets/9053854/24495974/fbf2e0cc-1547-11e7-846c-25b5fac7f6b1.png)
 
 ## Build Setup
 
