@@ -11,7 +11,7 @@
                 >
                   <v-text-field
                     v-model="longUrl"
-                    label="Paste Your Long URL"
+                    label="Paste Your URL"
                     required
                     outlined
                     v-on:keydown.enter.prevent="controlDatas"

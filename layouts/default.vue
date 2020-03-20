@@ -106,7 +106,7 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-circle-medium',
+          icon: 'mdi-circle-double',
           title: 'Basic',
           to: '/'
         },
