@@ -1,13 +1,16 @@
 <template>
   <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
+    <v-container v-if="error.statusCode === 404">
+      <v-row justify="center">
+        <v-img src="404.svg" alt="404 illustration" max-width="60%"></v-img>
+      </v-row>
+      <h1 class="text-center grey--text mt-5"> {{ pageNotFound }} </h1>
+    </v-container>
     <h1 v-else>
       {{ otherError }}
     </h1>
-    <NuxtLink to="/">
-      Home page
+    <NuxtLink to="/" class="text-center">
+      Return to Shotify
     </NuxtLink>
   </v-app>
 </template>
@@ -23,7 +26,7 @@ export default {
   },
   data () {
     return {
-      pageNotFound: '404 Not Found',
+      pageNotFound: 'Page Not Found',
       otherError: 'An error occurred'
     }
   },

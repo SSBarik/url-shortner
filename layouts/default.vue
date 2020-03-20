@@ -1,11 +1,12 @@
 <template>
-  <v-app id="app">
+  <v-app>
+    <!-- Left Navigation Drawer for smaller viewports -->
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
       app
-      class="hidden-sm-and-up"
+      class="hidden-md-and-up"
     >
       <v-list>
         <v-list-item
@@ -24,7 +25,8 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <!-- Mobile -->
+
+    <!-- App bar with Hamburger icon for smaller viewports -->
     <v-app-bar
       :clipped-left="clipped"
       fixed
@@ -32,20 +34,20 @@
       flat
       class="grey lighten-4"
     >
-      <v-avatar justify="space-around">
+      <NuxtLink to="/">
+      <v-avatar>
         <img
           src="logo.svg"
           alt="Logo"
         >
       </v-avatar>
+    </NuxtLink>
       <v-toolbar-title class="headline blue-grey--text text--darken-1 font-weight-condensed ml-2"  v-text="title" />
       <v-spacer />
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      
-      
     </v-app-bar>
     
-    <!-- Desktop -->
+    <!-- App bar with menus for larger viewports -->
     <v-app-bar
       :clipped-left="clipped"
       fixed
@@ -53,38 +55,43 @@
       flat
       class="hidden-sm-and-down  grey lighten-4"
     >
+
+    <NuxtLink to="/">
       <v-avatar>
         <img
           src="logo.svg"
           alt="Logo"
         >
       </v-avatar>
-
+    </NuxtLink>
       <v-toolbar-title class="headline blue-grey--text text--darken-1 font-weight-condensed ml-2" v-text="title" />
       <v-spacer />
-
       <v-toolbar-items>
          <v-btn
           v-for="(item, i) in items"
           :key="i"
-            :to="item.to"
-           :title="item.title"
-           depressed
-           color="grey lighten-4"
+          :to="item.to"
+          :title="item.title"
+          depressed
+          color="grey lighten-4"
         >
-         <v-icon color="cyan" class="mx-2">{{ item.icon }}</v-icon> 
-         {{ item.title }}</v-btn>
+          <v-icon 
+            color="cyan" 
+            class="mx-2"
+          >
+           {{ item.icon }}
+          </v-icon> 
+         {{ item.title }}
+        </v-btn>
         </v-toolbar-items>
-      
     </v-app-bar>
-
-    
 
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
+
     <v-footer
       absolute
       app
@@ -124,10 +131,3 @@ export default {
 }
 </script>
 
-<style>
-.shadow {
- -webkit-box-shadow: 0px 5px 11px 1px rgba(238,238,238,1);
--moz-box-shadow: 0px 5px 11px 1px rgba(238,238,238,1);
-box-shadow: 0px 5px 11px 1px rgba(238,238,238,1);
-}
-</style>
