@@ -2,6 +2,8 @@
 
 > My impeccable Nuxt.js project
 
+![Alt text](https://drive.google.com/file/d/1211_LAYVsfs0RVtiLOXPfoog3tW0wy6_/view?usp=sharing "Basic Page")
+
 ## Build Setup
 
 ```bash
