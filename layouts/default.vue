@@ -16,7 +16,7 @@
           exact
         >
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon color="cyan">{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -29,7 +29,8 @@
       :clipped-left="clipped"
       fixed
       app
-      class="blue lighten-5"
+      flat
+      class="grey lighten-4"
     >
       <v-avatar justify="space-around">
         <img
@@ -50,7 +51,7 @@
       fixed
       app
       flat
-      class="hidden-sm-and-down blue lighten-5"
+      class="hidden-sm-and-down  grey lighten-4"
     >
       <v-avatar>
         <img
@@ -69,9 +70,10 @@
             :to="item.to"
            :title="item.title"
            depressed
-           color="blue lighten-5"
-           small
-         ><v-icon>{{ item.icon }}</v-icon> {{ item.title }}</v-btn>
+           color="grey lighten-4"
+        >
+         <v-icon color="cyan" class="mx-2">{{ item.icon }}</v-icon> 
+         {{ item.title }}</v-btn>
         </v-toolbar-items>
       
     </v-app-bar>
@@ -86,7 +88,7 @@
     <v-footer
       absolute
       app
-      class="blue lighten-5"
+      class="grey lighten-4"
     >
       <v-row justify="center">
         <span>&copy; {{ new Date().getFullYear() }}  {{ title }} </span>
@@ -104,14 +106,14 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-home',
-          title: 'Home',
+          icon: 'mdi-circle-medium',
+          title: 'Basic',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Explore',
-          to: '/inspire'
+          title: 'Advanced',
+          to: '/advanced'
         }
       ],
       miniVariant: false,

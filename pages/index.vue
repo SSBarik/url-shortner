@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="12" lg="6">
         <v-card class="pa-lg-5">
           <v-form>
             <v-container>
@@ -11,7 +11,7 @@
                 >
                   <v-text-field
                     v-model="longUrl"
-                    label="Paste Your URL here"
+                    label="Paste Your Long URL"
                     required
                     outlined
                     v-on:keydown.enter.prevent="controlDatas"
@@ -63,7 +63,7 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" md="5" offset-lg="1">
+      <v-col cols="12" md="8" sm="8" lg="4" offset-lg="2" offset-sm="3" class="mt-5 pa-5">
          <v-img src="bg.png" max-width="100%"></v-img>
       </v-col>
     </v-row>
