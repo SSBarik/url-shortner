@@ -64,7 +64,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="8" sm="8" lg="4" offset-lg="2" offset-sm="3" class="mt-5 pa-5">
-         <v-img src="bg.png" max-width="100%"></v-img>
+         <v-img src="bg.svg" max-width="100%"></v-img>
       </v-col>
     </v-row>
 

@@ -34,7 +34,7 @@
     >
       <v-avatar justify="space-around">
         <img
-          src="logo.png"
+          src="logo.svg"
           alt="Logo"
         >
       </v-avatar>
@@ -55,7 +55,7 @@
     >
       <v-avatar>
         <img
-          src="logo.png"
+          src="logo.svg"
           alt="Logo"
         >
       </v-avatar>
