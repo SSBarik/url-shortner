@@ -1,5 +1,7 @@
 # url-shortner
 
+# Note: Users could quickly shorten a URL within a second or less.
+
 > My impeccable Nuxt.js project
 
 ![image](https://i.pinimg.com/originals/7b/8d/07/7b8d07a74684e3b8e8752fdc332617ff.png)
